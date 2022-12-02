@@ -13,7 +13,7 @@ namespace GestionClient.Controllers
         {
             var client = new Client()
             {
-                Id = 1,
+                Id = 1000,
                 Nom = "anasri",
                 Prenom = "anas",
                 Ville = "Casa"
@@ -21,6 +21,55 @@ namespace GestionClient.Controllers
 
             return View(client);
         }
+
+
+
+        public IActionResult form()
+        {
+            return View();
+        }
+
+
+
+        public IActionResult liste()
+        {
+            List<Client> listeclient = new List<Client>
+            {
+                new Client
+                {
+                Id = 1000,
+                Nom = "anasri",
+                Prenom = "anas",
+                Ville = "Casa"
+                },
+                new Client
+                {
+                Id = 2000,
+                Nom = "ytut",
+                Prenom = "aajkhnas",
+                Ville = "Casa"
+                },
+                new Client
+                {
+                Id = 3000,
+                Nom = "jshjsh",
+                Prenom = "s,mnkl",
+                Ville = "agjag"
+                }
+            };
+            ViewBag.clients = listeclient;
+            return View(listeclient);
+        }
+
+
+
+        [HttpPost]
+        public IActionResult Save(Client client)
+        {
+            return View(client);
+        }
+
+
 
         public IActionResult pro()
         {

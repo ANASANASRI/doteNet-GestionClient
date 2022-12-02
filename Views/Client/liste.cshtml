@@ -1,0 +1,16 @@
+﻿@{
+	ViewData["title"]="Client/liste";
+	Layout = "_layout" ;
+}
+
+<h1 style="text-align:center";>Client/liste</h1>
+
+<h3 style="text-align:center";>
+
+	@foreach (var varr in ViewBag.clients)
+	{
+		@varr.Id
+		<br />
+	}
+		
+</h3>

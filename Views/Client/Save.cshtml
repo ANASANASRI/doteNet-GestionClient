@@ -1,0 +1,14 @@
+﻿@{
+	ViewData["title"]="Client/Save";
+	Layout = "_layout" ;
+}
+
+<h1 style="text-align:center";>Client/Save</h1>
+
+<h3 style="text-align:center";>
+		@foreach (var varr in Model)
+	{
+		@varr.Nom
+		<br />
+	}
+</h3>
