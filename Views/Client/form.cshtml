@@ -5,9 +5,12 @@
 
 <h1 style="text-align:center";>Client/form</h1>
 
+@using (Html.BeginForm("Save","Client")){
+	<h4>id</h4>@Html.TextBox("Id")<br/>
+	<h4>nom</h4>@Html.TextBox("Nom")<br/>
+	<h4>prenom</h4>@Html.TextBox("Prenom")<br/>
+	<h4>ville</h4>@Html.TextBox("Ville")<br/>
+	<br/>
 
-ID: @Html.TextBox("Id")<br/>
-nom: @Html.TextBox("Nom")<br/>
-prenom: @Html.TextBox("Prenom")<br/>
-Ville: @Html.TextBox("Ville")<br/>
-<input type="submit" value="envoyer" />
+	<input type="submit" value="envoyer" />
+}

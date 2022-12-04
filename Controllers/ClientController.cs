@@ -30,7 +30,6 @@ namespace GestionClient.Controllers
         }
 
 
-
         public IActionResult liste()
         {
             List<Client> listeclient = new List<Client>
@@ -53,7 +52,7 @@ namespace GestionClient.Controllers
                 {
                 Id = 3000,
                 Nom = "jshjsh",
-                Prenom = "s,mnkl",
+                Prenom = "smnkl",
                 Ville = "agjag"
                 }
             };
